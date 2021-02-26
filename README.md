@@ -19,16 +19,21 @@ loading large files in certain cases (for example Figure 1A-B). See
     1. `Feature Metadata Coloring` color by `phylum_assignment`
     2. Set `Color Map` to `Dark`
     3. Click `Update`
-3. EMPO 2 barplot
+3. EMPO 1 barplot
     1. Check `Draw barplots?` in `Barplots` menu
     2. Click `Sample Metadata`
-    3. Show sample info for `empo_2`
-    4. Set `Color Map` to `Set1`
-    5. Set `Length` to 500
+    3. Show sample info for `empo_1`
+    4. Set `Color Map` to `Yellow-Orange-Red`
+    5. Set `Length` to 150
     6. Click `Update`
 4. Search for specific feature
     1. Copy `TACGTAGGTCCCGAGCGTTGTCCGGATTTATTGGGCGTAAAGCGAGCGCAGACGGTTACTTAAGCAGGATGTGAAATCCCCGGGCTCAAC` into search bar
     2. Click `Search`
+
+After configuring the tree, you can now configure the ordination panel on the right:
+
+1. Go to the `Color` tab on the right and select `empo_1` as the `Color Category` (in the first dropdown menu).
+2. In the second dropdown menu in the `Color` tab, select `Yellow-Orange-Red`.
 
 ## Figure 1B
 
@@ -40,17 +45,17 @@ loading large files in certain cases (for example Figure 1A-B). See
     2. Click `Feature Metadata`
     3. Color by `phylum_assignment`
     4. Set `Color Map` to `Dark`
-    5. Set length to 600
+    5. Set length to 150
 3. Mean pH barplot
     1. Click `Add another layer`
     2. Click `Feature Metadata`
     3. Color by `arithmetic_mean`
     4. Set `Color Map` to `Yellow-Green-Blue`
     5. Check `Continuous values?`
-    6. Set length to 600
+    6. Set length to 150
 4. Add space between barplots
     1. Check `Add a border around barplot layers?`
-    2. Set `Length` to 100
+    2. Set `Length` to 20
     3. Click `Update`
 
 ## Figure 2A
@@ -68,7 +73,15 @@ loading large files in certain cases (for example Figure 1A-B). See
     1. Check `Draw barplots?`
     2. Click `Feature Metadata`
     3. Color by `covid_hc_sig`
-    4. Set `Color Map` to `Spectral`
+    4. Set `Color Map` to `Viridis`
+    5. Click `Add another layer`
+    6. Color by `covid_pn_sig`
+    7. Set `Color Map` to `Viridis`
+    8. Check `Add a border around barplot layers?`
+    9. Change `Border Color` to `black`
+    10. Set border `Length` to `5`
+    11. Click the `Update` Button
+    12. Note: No significant difference = 0, Lower in COVID-19 samples = -1, Higher in COVID-19 samples = 1
 4. Double click on the `Carbon-carbon lyases` clade (the larger red clade)
 5. In `Search by node name...`, search for `4.1.1.20`
  
